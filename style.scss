@@ -18,10 +18,14 @@ section {
     height: 300px;
     background-color: #eee;
   }
+
+  p {
+    line-height: 1.45;
+  }
 }
 
 nav {
-  margin-top: 37px;
+  margin-top: 35px;
 
   a {
     margin-right: 25px;
@@ -30,5 +34,5 @@ nav {
 
 h2 {
   font-size: 34px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
