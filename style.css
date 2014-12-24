@@ -1,5 +1,9 @@
 @import url("reset.css");
 @import url("grid.css");
+body {
+  font-family: 'Gibson-Light';
+  -webkit-font-smoothing: antialiased; }
+
 .wrap {
   width: 1200px;
   margin: 0 auto;
@@ -15,15 +19,23 @@ section {
     height: 300px;
     background-color: #eee; }
   section p {
+    font-size: 20px;
     line-height: 1.45; }
+
+h1, h2 {
+  font-family: 'Gibson-Semibold'; }
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 55px; }
+
+a {
+  text-decoration: none; }
 
 nav {
   margin-top: 35px; }
   nav a {
-    margin-right: 25px; }
-
-h2 {
-  font-size: 34px;
-  margin-bottom: 55px; }
+    margin-right: 25px;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
