@@ -120,6 +120,19 @@ img {
 .client-section {
   background-color: #7d7d7d;
 }
+.strategic {
+  background-color: #343740;
+}
+.cost {
+  background-color: #5d5d5d;
+}
+.scoreboard {
+  background-color: #3fc380;
+  padding-bottom: 0;
+}
+.testimonials {
+  background-color: #2772cd;
+}
 .type-list {
   margin: 40px 0 0;
   text-align: center;
@@ -197,10 +210,6 @@ hr:after {
   font-weight: 100;
   margin-top: 0;
 }
-.scoreboard {
-  background-color: #3fc380;
-  padding-bottom: 0;
-}
 .major {
   width: 60%;
 }
@@ -226,12 +235,6 @@ hr:after {
 }
 .award.silver {
   color: #cecece;
-}
-.strategic {
-  background-color: #343740;
-}
-.cost {
-  background-color: #2772cd;
 }
 .award-text,
 .side-heading {
@@ -268,9 +271,6 @@ hr:after {
 .attr {
   font-size: 18px;
   color: #cecece;
-}
-.testimonials {
-  background-color: #ef6442;
 }
 .grande {
   font-size: 210px;
