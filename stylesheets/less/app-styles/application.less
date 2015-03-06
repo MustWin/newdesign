@@ -416,6 +416,74 @@ footer {
 
 @media only screen 
 and (min-device-width : 320px) 
+and (max-width : 1200px) { 
+  .type-item {
+    width: 33%;
+    display: block;
+    float: left;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .ss {
+      line-height: 100px;
+    }
+    .type-one {
+      font-size: 86px;
+    }
+
+    .type-two {
+      font-size: 53px;
+      padding-top: 2px;
+    }
+
+    .type-three {
+      font-size: 36px;
+      padding-top: 4px;
+    }
+  }
+
+  .thirds {
+    width: 32.5%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .trophy-case {
+    margin-top: 70px;
+  }
+
+  .halves {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .award {
+    width: 100%;
+    font-size: 86px;
+    margin: 0 auto;
+    line-height: .6;
+  }
+
+  .testimonials {
+    .thirds {
+      width: 50%;
+      float: left;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .customer-quote {
+      height: auto;
+
+      .note-text.strong {
+        height: auto;
+      }
+    }
+  }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
 and (max-device-width : 667px) {
   .hide {
     display: none;
@@ -508,31 +576,6 @@ and (max-device-width : 667px) {
     margin-top: 20px;
   }
 
-  .type-item {
-    width: 33%;
-    display: block;
-    float: left;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    .ss {
-      line-height: 100px;
-    }
-    .type-one {
-      font-size: 86px;
-    }
-
-    .type-two {
-      font-size: 53px;
-      padding-top: 2px;
-    }
-
-    .type-three {
-      font-size: 36px;
-      padding-top: 4px;
-    }
-  }
-
   .type {
     font-size: 16px;
     font-weight: 500;
@@ -571,27 +614,16 @@ and (max-device-width : 667px) {
     box-sizing: border-box;
   }
 
-  .trophy-case {
-    margin-top: 70px;
-  }
-
-  .thirds {
-    width: 32.5%;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .award {
-    width: 100%;
-    font-size: 86px;
-    margin: 0 auto;
-    line-height: .6;
-  }
-
   .award-text {
     font-size: 16px;
     font-weight: 500;
     text-align: center;
+  }
+
+  .testimonials {
+    .thirds {
+      width: 100%;
+    }
   }
 
   .side-note.bottom-drop {
@@ -599,21 +631,16 @@ and (max-device-width : 667px) {
     padding-bottom: 48px;
   }
 
-  .testimonials {
-    .thirds {
-      width: 100%;
-    }
-
-    .customer-quote {
-      height: auto;
-
-      .note-text.strong {
-        height: auto;
-      }
-    }
-  }
-
   .ss-bullseye {
     margin-top: 30px;
+  }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+  .show {
+    display: none;
   }
 }
