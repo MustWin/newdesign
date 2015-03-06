@@ -433,48 +433,55 @@ footer a:hover {
 }
 .p-item-wrap {
   display: block;
-  padding: 80px 40px 0;
+  padding: 80px 40px;
   background-color: #fefefe;
-  border-top: 1px solid #dfdfdf;
-}
-.p-item-wrap:first-of-type {
-  border-top: 0;
+  border-bottom: 1px solid #dfdfdf;
 }
 .p-item {
   position: relative;
-  min-height: 400px;
   max-width: 1200px;
   margin: auto;
-  padding-right: 340px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.p-item-wrap.p-left .p-item {
-  padding-left: 340px;
-  padding-right: 0;
-}
 .p-item-img {
   position: relative;
-  display: block;
   z-index: 1;
-  padding-bottom: 60%;
+  display: inline-block;
+  float: left;
+  width: 60%;
+  margin-bottom: -1px;
+  overflow: hidden;
   border: 1px solid #dfdfdf;
-  border-bottom: 0;
   background: top center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+}
+.p-item-wrap.p-left .p-item-img {
+  float: right;
 }
 .p-item-content {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 300px;
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 40%;
+  padding-left: 40px;
 }
 .p-item-wrap.p-left .p-item-content {
-  right: auto;
-  left: 0;
+  float: left;
+  padding-left: 0;
+  padding-right: 40px;
 }
 .p-item-name {
   margin-top: -8px;
@@ -495,6 +502,7 @@ footer a:hover {
   position: relative;
   display: inline-block;
   float: left;
+  height: 26px;
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 7px 10px 5px;
@@ -518,7 +526,7 @@ footer a:hover {
 }
 .p-item-role {
   margin-bottom: 5px;
-  color: #93a5ba;
+  color: #99a0a8;
   font-weight: 500;
 }
 .p-item-role:last-child {
@@ -528,7 +536,7 @@ footer a:hover {
   position: relative;
   top: 2px;
   margin-right: 8px;
-  color: #93a5ba;
+  color: #99a0a8;
 }
 .p-item-quote {
   position: relative;
