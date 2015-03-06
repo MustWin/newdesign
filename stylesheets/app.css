@@ -120,18 +120,46 @@ img {
 .client-section {
   background-color: #7d7d7d;
 }
+.client-section .type-one,
+.client-section .type-two,
+.client-section .type-three {
+  color: rgba(204, 204, 204, 0.6);
+}
 .strategic {
   background-color: #343740;
 }
 .cost {
-  background-color: #5d5d5d;
+  background-color: #ffffff;
+  color: #343740;
 }
 .scoreboard {
   background-color: #3fc380;
   padding-bottom: 0;
+  margin-bottom: -6px;
 }
 .testimonials {
   background-color: #2772cd;
+}
+.testimonials .grande {
+  color: rgba(204, 204, 204, 0.72);
+  margin-bottom: 5px;
+}
+.testimonials .customer-quote {
+  height: 400px;
+}
+.testimonials .customer-quote .type-three {
+  display: block;
+  position: relative;
+  bottom: 0;
+  color: rgba(204, 204, 204, 0.72);
+}
+.testimonials .customer-quote .note-text.strong {
+  font-style: italic;
+  text-align: left;
+  padding: 0 6px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 280px;
 }
 .type-list {
   margin: 40px 0 0;
@@ -168,7 +196,7 @@ img {
   font-size: 48px;
 }
 hr {
-  background-color: #ffffff;
+  background-color: rgba(204, 204, 204, 0.6);
   border: 0 none;
   display: block;
   height: 1px;
@@ -180,7 +208,7 @@ hr {
 }
 hr:before,
 hr:after {
-  background-color: #ffffff;
+  background-color: rgba(204, 204, 204, 0.6);
   content: '';
   display: block;
   height: 11px;
@@ -226,7 +254,7 @@ hr:after {
   border-bottom: none;
 }
 .award {
-  color: #ffed6d;
+  color: rgba(240, 223, 112, 0.9);
   font-size: 186px;
   margin: 0 auto -64px;
   display: block;
@@ -238,9 +266,8 @@ hr:after {
 }
 .award-text,
 .side-heading {
-  font-size: 24px;
-  font-weight: 400;
-  font-family: 'Gibson-Regular';
+  font-size: 26px;
+  font-weight: 100;
 }
 .thirds {
   width: 29%;
@@ -256,10 +283,10 @@ hr:after {
   text-align: center;
 }
 .gold-text {
-  color: #ffed6d;
+  color: rgba(240, 223, 112, 0.9);
 }
 .silver-text {
-  color: #cecece;
+  color: #343740;
 }
 .strong {
   font-weight: 400;
