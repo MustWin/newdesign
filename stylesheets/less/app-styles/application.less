@@ -122,6 +122,10 @@ div, img {
 
 .client-section {
   background-color: @gray;
+
+  .type-one, .type-two, .type-three {
+    color: rgba(204,204,204,.6); 
+  }
 }
 
 .strategic {
@@ -129,7 +133,8 @@ div, img {
 }
 
 .cost {
-  background-color: @gray-dark;
+  background-color: @white;
+  color: @gray-darker;
 }
 
 .scoreboard {
@@ -142,7 +147,7 @@ div, img {
   background-color: @brand-primary;
 
   .grande {
-    color: rgba(255,255,255,.28);
+    color: rgba(204,204,204,.72);
     margin-bottom: 5px;
   }
 
@@ -153,7 +158,7 @@ div, img {
       display: block;
       position: relative;
       bottom: 0;
-      color: rgba(255,255,255,.28);
+      color: rgba(204,204,204,.72);
     }
 
     .note-text.strong {
@@ -202,7 +207,7 @@ div, img {
 
 hr {
   display: block;
-  background-color: @white;
+  background-color: rgba(204,204,204,.6);
   border: 0 none;
   display: block;
   height: 1px;
@@ -214,7 +219,7 @@ hr {
 }
 
 hr:before, hr:after {
-  background-color: @white;
+  background-color: rgba(204,204,204,.6);
   content: '';
   display: block;
   height: 11px;
@@ -267,7 +272,7 @@ hr:after {
 }
 
 .award {
-  color: @brand-warning;
+  color: rgba(240,223,112,.9);
   font-size: 186px;
   margin: 0 auto -64px;
   display: block;
@@ -279,9 +284,8 @@ hr:after {
 }
 
 .award-text, .side-heading  {
-  font-size: 24px;
-  font-weight: 400;
-  font-family: 'Gibson-Regular';
+  font-size: 26px;
+  font-weight: 100;
 }
 
 .thirds {
@@ -300,11 +304,11 @@ hr:after {
 }
 
 .gold-text {
-  color: @brand-warning;
+  color: rgba(240,223,112,.9);
 }
 
 .silver-text {
-  color: @gray-lighter;
+  color: @gray-darker;
 }
 
 .strong {

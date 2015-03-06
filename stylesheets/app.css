@@ -120,11 +120,17 @@ img {
 .client-section {
   background-color: #7d7d7d;
 }
+.client-section .type-one,
+.client-section .type-two,
+.client-section .type-three {
+  color: rgba(204, 204, 204, 0.6);
+}
 .strategic {
   background-color: #343740;
 }
 .cost {
-  background-color: #5d5d5d;
+  background-color: #ffffff;
+  color: #343740;
 }
 .scoreboard {
   background-color: #3fc380;
@@ -135,7 +141,7 @@ img {
   background-color: #2772cd;
 }
 .testimonials .grande {
-  color: rgba(255, 255, 255, 0.28);
+  color: rgba(204, 204, 204, 0.72);
   margin-bottom: 5px;
 }
 .testimonials .customer-quote {
@@ -145,7 +151,7 @@ img {
   display: block;
   position: relative;
   bottom: 0;
-  color: rgba(255, 255, 255, 0.28);
+  color: rgba(204, 204, 204, 0.72);
 }
 .testimonials .customer-quote .note-text.strong {
   font-style: italic;
@@ -190,7 +196,7 @@ img {
   font-size: 48px;
 }
 hr {
-  background-color: #ffffff;
+  background-color: rgba(204, 204, 204, 0.6);
   border: 0 none;
   display: block;
   height: 1px;
@@ -202,7 +208,7 @@ hr {
 }
 hr:before,
 hr:after {
-  background-color: #ffffff;
+  background-color: rgba(204, 204, 204, 0.6);
   content: '';
   display: block;
   height: 11px;
@@ -248,7 +254,7 @@ hr:after {
   border-bottom: none;
 }
 .award {
-  color: #ffed6d;
+  color: rgba(240, 223, 112, 0.9);
   font-size: 186px;
   margin: 0 auto -64px;
   display: block;
@@ -260,9 +266,8 @@ hr:after {
 }
 .award-text,
 .side-heading {
-  font-size: 24px;
-  font-weight: 400;
-  font-family: 'Gibson-Regular';
+  font-size: 26px;
+  font-weight: 100;
 }
 .thirds {
   width: 29%;
@@ -278,10 +283,10 @@ hr:after {
   text-align: center;
 }
 .gold-text {
-  color: #ffed6d;
+  color: rgba(240, 223, 112, 0.9);
 }
 .silver-text {
-  color: #cecece;
+  color: #343740;
 }
 .strong {
   font-weight: 400;
