@@ -386,7 +386,7 @@ footer a:hover {
 .show {
   display: none;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
   .hide {
     display: none;
   }
@@ -507,8 +507,9 @@ footer a:hover {
     float: none;
   }
   .left.major img {
-    margin: 10px 10px 30px 10px;
-    width: 330px;
+    margin: 10px auto 30px auto;
+    width: 90%;
+    display: block;
   }
   .note-text {
     width: 100%;
