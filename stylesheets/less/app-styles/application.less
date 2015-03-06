@@ -30,7 +30,7 @@ div, img {
 .cinema-bg {
   box-sizing: border-box;
   min-height: 100vh;
-  background: url('../../images/city-bg.jpg'); /* Chrome10+,Safari5.1+ */
+  background: url('../images/city-bg.jpg'); /* Chrome10+,Safari5.1+ */
   background-size: cover;
   background-position: center top;
   color: #fff;
@@ -48,7 +48,7 @@ div, img {
   position: absolute;
   left: 24px;
   top: 100px;
-  background-image: url('../../images/logo-new.svgz');
+  background-image: url('../images/logo-new.svgz');
   background-size: 500px auto;
   background-repeat: no-repeat;
   background-position: top center;
@@ -123,20 +123,49 @@ div, img {
 .client-section {
   background-color: @gray;
 }
+
 .strategic {
   background-color: @gray-darker;
 }
+
 .cost {
   background-color: @gray-dark;
 }
+
 .scoreboard {
   background-color: @brand-success;
   padding-bottom: 0;
-}
-.testimonials {
-  background-color: @brand-primary;
+  margin-bottom: -6px;
 }
 
+.testimonials {
+  background-color: @brand-primary;
+
+  .grande {
+    color: rgba(255,255,255,.28);
+    margin-bottom: 5px;
+  }
+
+  .customer-quote {
+    height: 400px;
+
+    .type-three {
+      display: block;
+      position: relative;
+      bottom: 0;
+      color: rgba(255,255,255,.28);
+    }
+
+    .note-text.strong {
+      font-style: italic;
+      text-align: left;
+      padding: 0 6px;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      height: 280px;
+    }
+  }
+}
 
 .type-list {
   margin: 40px 0 0;
@@ -154,19 +183,22 @@ div, img {
   text-align: center;
   width: 30%;
 }
+
 .type {
   font-size: 26px;
   font-weight: 100;
 }
+
 .ss {
   display: block;
   line-height: 140px;
   position: relative;
   text-align: center; 
 }
+
 .type-one {font-size: 120px; }
 .type-two {font-size: 72px; }
-.type-three {font-size: 48px; }
+.type-three {font-size: 48px;}
 
 hr {
   display: block;
@@ -180,6 +212,7 @@ hr {
   width: 100%;
   box-sizing: border-box; 
 }
+
 hr:before, hr:after {
   background-color: @white;
   content: '';
@@ -189,6 +222,7 @@ hr:before, hr:after {
   top: -5px;
   width: 1px; 
 }
+
 hr:after {
   right: 0; 
 }
@@ -231,6 +265,7 @@ hr:after {
     border-bottom: none;
   }
 }
+
 .award {
   color: @brand-warning;
   font-size: 186px;
@@ -256,18 +291,22 @@ hr:after {
   text-align: center;
   vertical-align: top;
 }
+
 .halves {
   width: 45%;
   padding: 2%;
   display: inline-block;
   text-align: center;
 }
+
 .gold-text {
   color: @brand-warning;
 }
+
 .silver-text {
   color: @gray-lighter;
 }
+
 .strong {
   font-weight: 400;
   font-family: 'Gibson-Regular';
@@ -276,10 +315,12 @@ hr:after {
 .side-heading {
   margin: 0 0 10px;
 }
+
 .attr {
   font-size: 18px;
   color: @gray-lighter;
 }
+
 .grande {
   font-size: 210px;
   line-height: 210px;
@@ -287,6 +328,7 @@ hr:after {
   margin: 0 auto;
   display: block;
 }
+
 .nps {
   font-size: 24px;
   font-weight: 400;
@@ -294,11 +336,13 @@ hr:after {
   margin: -28px 0 10px;
   text-align: center;
 }
+
 .hire-us {
   background-color: @white-off;
   color: @gray-darker;
   min-height: 340px;
 }
+
 footer {
   color: @white;
   font-size: 14px;
