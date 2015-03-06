@@ -1,6 +1,14 @@
 /* app-styles/application.less - My Application's CSS!
   --------------------------------------------------------------------------- */
 
+*, *:before, *:after {
+  // -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+
 body {
   font-family: 'Gibson';
   font-weight: 300;
@@ -108,52 +116,78 @@ div, img {
   width: 10.5%;
   padding: 0 2.9%;
   text-align: center;
+  img {
+    .opacity(.5);
+    .transition(all .5s ease);
+    &:hover {
+      .opacity(1);
+    }
+  }
   &.cisco img {
-    width: 82%;
+    width: 80%;
   }
 }
 
 .clients {
   font-size: 18px;
-  color: @gray-5;
+  color: @gray-a;
   font-family: 'Gibson';
   font-weight: 500;
 }
 
 .section {
   width: 94%;
-  padding: 48px 3%;
-  color: @white;
+  padding: 60px 3%;
+  color: @gray-6;
 }
 
-.client-section {
-  background-color: @gray-7;
+//  Client Section
 
+.client-section {
+  background-color: @gray-f;
+  border-top: 1px solid @gray-d;
   .type-one, .type-two, .type-three {
-    color: rgba(204,204,204,.6);
+    color: @brand-primary;
   }
 }
 
+//  Strategic Section
+
 .strategic {
-  background-color: @gray-3;
+  background-color: @white;
+  border-top: 1px solid @gray-d;
 }
+
+//  Cost Section
 
 .cost {
-  background-color: @white;
-  color: @gray-3;
+  background-color: @gray-f;
+  border-top: 1px solid @gray-d;
 }
+
+//  Scoreboard Section
 
 .scoreboard {
-  background-color: @brand-success;
+  background-color: @white;
+  border-top: 1px solid @gray-d;
   padding-bottom: 0;
-  margin-bottom: -6px;
 }
 
+#scoreboard-ss {
+  border: 1px solid @gray-d;
+  border-bottom: 0;
+  overflow: hidden;
+  .border-radius(4px 4px 0 0);
+}
+
+//  Testimonials Section
+
 .testimonials {
-  background-color: @brand-primary;
+  background-color: @gray-f;
+  border-top: 1px solid @gray-d;
 
   .grande {
-    color: rgba(204,204,204,.72);
+    color: @brand-success;
     margin-bottom: 5px;
   }
 
@@ -164,7 +198,7 @@ div, img {
       display: block;
       position: relative;
       bottom: 0;
-      color: rgba(204,204,204,.72);
+      color: @brand-primary;
     }
 
     .note-text.strong {
@@ -181,7 +215,7 @@ div, img {
 .type-list {
   margin: 40px 0 0;
   text-align: center;
-  width: 60%; 
+  width: 60%;
   list-style-type: none;
   padding: 0;
   float: left;
@@ -190,7 +224,7 @@ div, img {
 .type-item {
   display: inline-block;
   padding: 0 1.4%;
-  color: white;
+  color: @brand-primary;
   text-align: center;
   width: 30%;
 }
@@ -204,7 +238,7 @@ div, img {
   display: block;
   line-height: 140px;
   position: relative;
-  text-align: center; 
+  text-align: center;
 }
 
 .type-one {font-size: 120px; }
@@ -213,7 +247,7 @@ div, img {
 
 hr {
   display: block;
-  background-color: rgba(204,204,204,.6);
+  background-color: @gray-d;
   border: 0 none;
   display: block;
   height: 1px;
@@ -221,17 +255,17 @@ hr {
   margin-bottom: 10px;
   position: relative;
   width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 hr:before, hr:after {
-  background-color: rgba(204,204,204,.6);
+  background-color: @gray-d;
   content: '';
   display: block;
   height: 11px;
   position: absolute;
   top: -5px;
-  width: 1px; 
+  width: 1px;
 }
 
 hr:after {
@@ -265,13 +299,13 @@ hr:after {
 }
 
 .section-link {
-  color: @white-off;
+  color: @brand-primary;
   font-weight: 500;
   font-family: 'Gibson';
   text-decoration: none;
-  border-bottom: 1px solid @white-off;
+  border-bottom: 1px solid @brand-primary;
   &:hover {
-    color: @white;
+    color: lighten(@brand-primary, 10%);
     text-decoration: none;
     border-bottom: none;
   }
@@ -327,8 +361,10 @@ hr:after {
 }
 
 .attr {
+  display: block;
+  margin-top: 10px;
   font-size: 18px;
-  color: @gray-c;
+  color: @gray-8;
 }
 
 .grande {
@@ -347,9 +383,11 @@ hr:after {
   text-align: center;
 }
 
+//  Hire Us Section
+
 .hire-us {
-  background-color: @white-off;
-  color: @gray-3;
+  background-color: @white;
+  border-top: 1px solid @gray-d;
   min-height: 340px;
 }
 

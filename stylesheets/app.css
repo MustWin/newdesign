@@ -9,6 +9,14 @@
   --------------------------------------------------------------------------- */
 /* app-styles/application.less - My Application's CSS!
   --------------------------------------------------------------------------- */
+*:focus,
+*:before:focus,
+*:after:focus,
+*:active,
+*:before:active,
+*:after:active {
+  outline: none;
+}
 body {
   font-family: 'Gibson';
   font-weight: 300;
@@ -72,7 +80,7 @@ img {
   font-weight: normal;
 }
 .nav .nav-item {
-  color: #ffffff;
+  color: #fefefe;
   text-decoration: none;
   display: inline-block;
   margin-left: 24px;
@@ -96,7 +104,7 @@ img {
   display: none;
 }
 .client-list {
-  background-color: #ffffff;
+  background-color: #fefefe;
   padding: 20px 0;
   width: 100%;
   margin: 0;
@@ -109,45 +117,77 @@ img {
   padding: 0 2.9%;
   text-align: center;
 }
+.client img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.client img:hover {
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
 .client.cisco img {
-  width: 82%;
+  width: 80%;
 }
 .clients {
   font-size: 18px;
-  color: #5d5d5d;
+  color: #aaaaaa;
   font-family: 'Gibson';
   font-weight: 500;
 }
 .section {
   width: 94%;
-  padding: 48px 3%;
-  color: #ffffff;
+  padding: 60px 3%;
+  color: #6d6d6d;
 }
 .client-section {
-  background-color: #7d7d7d;
+  background-color: #fcfcfc;
+  border-top: 1px solid #dfdfdf;
 }
 .client-section .type-one,
 .client-section .type-two,
 .client-section .type-three {
-  color: rgba(204, 204, 204, 0.6);
+  color: #2772cd;
 }
 .strategic {
-  background-color: #343740;
+  background-color: #fefefe;
+  border-top: 1px solid #dfdfdf;
 }
 .cost {
-  background-color: #ffffff;
-  color: #343740;
+  background-color: #fcfcfc;
+  border-top: 1px solid #dfdfdf;
 }
 .scoreboard {
-  background-color: #3fc380;
+  background-color: #fefefe;
+  border-top: 1px solid #dfdfdf;
   padding-bottom: 0;
-  margin-bottom: -6px;
+}
+#scoreboard-ss {
+  border: 1px solid #dfdfdf;
+  border-bottom: 0;
+  overflow: hidden;
+  -webkit-border-radius: 4px 4px 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px 4px 0 0;
+  -moz-background-clip: padding;
+  border-radius: 4px 4px 0 0;
+  background-clip: padding-box;
 }
 .testimonials {
-  background-color: #2772cd;
+  background-color: #fcfcfc;
+  border-top: 1px solid #dfdfdf;
 }
 .testimonials .grande {
-  color: rgba(204, 204, 204, 0.72);
+  color: #3fc380;
   margin-bottom: 5px;
 }
 .testimonials .customer-quote {
@@ -157,7 +197,7 @@ img {
   display: block;
   position: relative;
   bottom: 0;
-  color: rgba(204, 204, 204, 0.72);
+  color: #2772cd;
 }
 .testimonials .customer-quote .note-text.strong {
   font-style: italic;
@@ -178,7 +218,7 @@ img {
 .type-item {
   display: inline-block;
   padding: 0 1.4%;
-  color: white;
+  color: #2772cd;
   text-align: center;
   width: 30%;
 }
@@ -202,7 +242,7 @@ img {
   font-size: 48px;
 }
 hr {
-  background-color: rgba(204, 204, 204, 0.6);
+  background-color: #dfdfdf;
   border: 0 none;
   display: block;
   height: 1px;
@@ -214,7 +254,7 @@ hr {
 }
 hr:before,
 hr:after {
-  background-color: rgba(204, 204, 204, 0.6);
+  background-color: #dfdfdf;
   content: '';
   display: block;
   height: 11px;
@@ -248,14 +288,14 @@ hr:after {
   width: 60%;
 }
 .section-link {
-  color: #f3f3f3;
+  color: #2772cd;
   font-weight: 500;
   font-family: 'Gibson';
   text-decoration: none;
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid #2772cd;
 }
 .section-link:hover {
-  color: #ffffff;
+  color: #4a8cdd;
   text-decoration: none;
   border-bottom: none;
 }
@@ -302,8 +342,10 @@ hr:after {
   margin: 0 0 10px;
 }
 .attr {
+  display: block;
+  margin-top: 10px;
   font-size: 18px;
-  color: #cecece;
+  color: #888888;
 }
 .grande {
   font-size: 210px;
@@ -320,17 +362,17 @@ hr:after {
   text-align: center;
 }
 .hire-us {
-  background-color: #f3f3f3;
-  color: #343740;
+  background-color: #fefefe;
+  border-top: 1px solid #dfdfdf;
   min-height: 340px;
 }
 footer {
-  color: #ffffff;
+  color: #fefefe;
   font-size: 14px;
   min-height: 200px;
 }
 footer a {
-  color: #ffffff;
+  color: #fefefe;
   text-decoration: none;
   font-weight: 500;
   font-family: 'Gibson';
