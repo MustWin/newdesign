@@ -10,7 +10,8 @@
 /* app-styles/application.less - My Application's CSS!
   --------------------------------------------------------------------------- */
 body {
-  font-family: 'Gibson-Light';
+  font-family: 'Gibson';
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   line-height: 1.4;
   background-color: #030303;
@@ -67,7 +68,8 @@ img {
   text-align: right;
   margin: 0;
   text-transform: uppercase;
-  font-family: 'Gibson-Regular';
+  font-family: 'Gibson';
+  font-weight: normal;
 }
 .nav .nav-item {
   color: #ffffff;
@@ -86,7 +88,8 @@ img {
   text-shadow: 2px 2px #030303;
   text-align: right;
   margin: 0;
-  font-family: 'Gibson-Semibold';
+  font-family: 'Gibson';
+  font-weight: 600;
   color: #fff;
 }
 .text-offset {
@@ -106,11 +109,14 @@ img {
   padding: 0 2.9%;
   text-align: center;
 }
+.client.cisco img {
+  width: 82%;
+}
 .clients {
   font-size: 18px;
   color: #5d5d5d;
-  font-family: 'Gibson-Regular';
-  font-weight: 400;
+  font-family: 'Gibson';
+  font-weight: 500;
 }
 .section {
   width: 94%;
@@ -221,8 +227,8 @@ hr:after {
 }
 .section-heading {
   font-size: 32px;
-  font-family: 'Gibson-Regular';
-  font-weight: 400;
+  font-family: 'Gibson';
+  font-weight: 500;
   margin: 0 0 24px;
 }
 .side-note {
@@ -243,8 +249,8 @@ hr:after {
 }
 .section-link {
   color: #f3f3f3;
-  font-weight: 400;
-  font-family: 'Gibson-Regular';
+  font-weight: 500;
+  font-family: 'Gibson';
   text-decoration: none;
   border-bottom: 1px solid #f3f3f3;
 }
@@ -289,8 +295,8 @@ hr:after {
   color: #343740;
 }
 .strong {
-  font-weight: 400;
-  font-family: 'Gibson-Regular';
+  font-weight: 500;
+  font-family: 'Gibson';
 }
 .side-heading {
   margin: 0 0 10px;
@@ -308,8 +314,8 @@ hr:after {
 }
 .nps {
   font-size: 24px;
-  font-weight: 400;
-  font-family: 'Gibson-Regular';
+  font-weight: 500;
+  font-family: 'Gibson';
   margin: -28px 0 10px;
   text-align: center;
 }
@@ -326,8 +332,8 @@ footer {
 footer a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: 400;
-  font-family: 'Gibson-Regular';
+  font-weight: 500;
+  font-family: 'Gibson';
 }
 footer a:hover {
   color: #dfdfdf;

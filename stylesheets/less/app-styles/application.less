@@ -2,7 +2,8 @@
   --------------------------------------------------------------------------- */
 
 body {
-  font-family: 'Gibson-Light';
+  font-family: 'Gibson';
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   line-height: 1.4;
   background-color: #030303;
@@ -30,7 +31,7 @@ div, img {
 .cinema-bg {
   box-sizing: border-box;
   min-height: 100vh;
-  background: url('../images/city-bg.jpg'); /* Chrome10+,Safari5.1+ */
+  background: url('../../images/city-bg.jpg'); /* Chrome10+,Safari5.1+ */
   background-size: cover;
   background-position: center top;
   color: #fff;
@@ -48,7 +49,7 @@ div, img {
   position: absolute;
   left: 24px;
   top: 100px;
-  background-image: url('../images/logo-new.svgz');
+  background-image: url('../../images/logo-new.svgz');
   background-size: 500px auto;
   background-repeat: no-repeat;
   background-position: top center;
@@ -63,14 +64,15 @@ div, img {
   text-align: right; 
   margin: 0;
   text-transform: uppercase;
-  font-family: 'Gibson-Regular';
+  font-family: 'Gibson';
+  font-weight: normal;
   .nav-item {
     color: @white;
     text-decoration: none;
     display: inline-block;
     margin-left: 24px;
     &:hover {
-      color: @gray-lighter;
+      color: @gray-c;
     }
   }
 }
@@ -83,7 +85,8 @@ div, img {
   text-shadow: 2px 2px #030303;
   text-align: right; 
   margin: 0;
-  font-family: 'Gibson-Semibold';
+  font-family: 'Gibson';
+  font-weight: 600;
   color: #fff;
 }
 
@@ -105,13 +108,16 @@ div, img {
   width: 10.5%;
   padding: 0 2.9%;
   text-align: center;
+  &.cisco img {
+    width: 82%;
+  }
 }
 
 .clients {
   font-size: 18px;
-  color: @gray-dark;
-  font-family: 'Gibson-Regular';
-  font-weight: 400;
+  color: @gray-5;
+  font-family: 'Gibson';
+  font-weight: 500;
 }
 
 .section {
@@ -121,20 +127,20 @@ div, img {
 }
 
 .client-section {
-  background-color: @gray;
+  background-color: @gray-7;
 
   .type-one, .type-two, .type-three {
-    color: rgba(204,204,204,.6); 
+    color: rgba(204,204,204,.6);
   }
 }
 
 .strategic {
-  background-color: @gray-darker;
+  background-color: @gray-3;
 }
 
 .cost {
   background-color: @white;
-  color: @gray-darker;
+  color: @gray-3;
 }
 
 .scoreboard {
@@ -234,8 +240,8 @@ hr:after {
 
 .section-heading {
   font-size: 32px;
-  font-family: 'Gibson-Regular';
-  font-weight: 400;
+  font-family: 'Gibson';
+  font-weight: 500;
   margin: 0 0 24px;
 }
 
@@ -260,8 +266,8 @@ hr:after {
 
 .section-link {
   color: @white-off;
-  font-weight: 400;
-  font-family: 'Gibson-Regular';
+  font-weight: 500;
+  font-family: 'Gibson';
   text-decoration: none;
   border-bottom: 1px solid @white-off;
   &:hover {
@@ -279,7 +285,7 @@ hr:after {
   width: 186px;
   line-height: 260px;
   &.silver {
-    color: @gray-lighter;
+    color: @gray-c;
   }
 }
 
@@ -308,12 +314,12 @@ hr:after {
 }
 
 .silver-text {
-  color: @gray-darker;
+  color: @gray-3;
 }
 
 .strong {
-  font-weight: 400;
-  font-family: 'Gibson-Regular';
+  font-weight: 500;
+  font-family: 'Gibson';
 }
 
 .side-heading {
@@ -322,7 +328,7 @@ hr:after {
 
 .attr {
   font-size: 18px;
-  color: @gray-lighter;
+  color: @gray-c;
 }
 
 .grande {
@@ -335,15 +341,15 @@ hr:after {
 
 .nps {
   font-size: 24px;
-  font-weight: 400;
-  font-family: 'Gibson-Regular';
+  font-weight: 500;
+  font-family: 'Gibson';
   margin: -28px 0 10px;
   text-align: center;
 }
 
 .hire-us {
   background-color: @white-off;
-  color: @gray-darker;
+  color: @gray-3;
   min-height: 340px;
 }
 
@@ -354,10 +360,10 @@ footer {
   a {
     color: @white;
     text-decoration: none;
-    font-weight: 400;
-    font-family: 'Gibson-Regular';
+    font-weight: 500;
+    font-family: 'Gibson';
     &:hover {
-      color: @gray-light;
+      color: @gray-d;
     }
   }
 }

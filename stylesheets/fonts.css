@@ -2372,43 +2372,59 @@ html:hover [class^="ss-"] {
 */
 /* @import must be at top of file, otherwise CSS will not work */
 @font-face {
-  font-family: 'Gibson-Light';
-  src: url('/stylesheets/fonts/gibson/26DC34_0_0.eot');
-  src: url('/stylesheets/fonts/gibson/26DC34_0_0.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/gibson/26DC34_0_0.woff') format('woff'), url('/stylesheets/fonts/gibson/26DC34_0_0.ttf') format('truetype');
+  font-family: 'Gibson';
+  font-weight: 300;
+  font-style: normal;
+  src: url('fonts/gibson/26DC34_0_0.eot');
+  src: url('fonts/gibson/26DC34_0_0.eot?#iefix') format('embedded-opentype'), url('fonts/gibson/26DC34_0_0.woff') format('woff'), url('fonts/gibson/26DC34_0_0.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Gibson-LightIt';
-  src: url('/stylesheets/fonts/gibson/26DC34_1_0.eot');
-  src: url('/stylesheets/fonts/gibson/26DC34_1_0.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/gibson/26DC34_1_0.woff') format('woff'), url('/stylesheets/fonts/gibson/26DC34_1_0.ttf') format('truetype');
+  font-family: 'Gibson';
+  font-weight: 300;
+  font-style: italic;
+  src: url('fonts/gibson/26DC34_1_0.eot');
+  src: url('fonts/gibson/26DC34_1_0.eot?#iefix') format('embedded-opentype'), url('fonts/gibson/26DC34_1_0.woff') format('woff'), url('fonts/gibson/26DC34_1_0.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Gibson-BoldItalic';
-  src: url('/stylesheets/fonts/gibson/26DC34_2_0.eot');
-  src: url('/stylesheets/fonts/gibson/26DC34_2_0.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/gibson/26DC34_2_0.woff') format('woff'), url('/stylesheets/fonts/gibson/26DC34_2_0.ttf') format('truetype');
+  font-family: 'Gibson';
+  font-weight: 500;
+  font-style: normal;
+  src: url('fonts/gibson/26DC34_5_0.eot');
+  src: url('fonts/gibson/26DC34_5_0.eot?#iefix') format('embedded-opentype'), url('fonts/gibson/26DC34_5_0.woff') format('woff'), url('fonts/gibson/26DC34_5_0.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Gibson-SemiboldIt';
-  src: url('/stylesheets/fonts/gibson/26DC34_3_0.eot');
-  src: url('/stylesheets/fonts/gibson/26DC34_3_0.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/gibson/26DC34_3_0.woff') format('woff'), url('/stylesheets/fonts/gibson/26DC34_3_0.ttf') format('truetype');
+  font-family: 'Gibson';
+  font-weight: 500;
+  font-style: italic;
+  src: url('fonts/gibson/26DC34_7_0.eot');
+  src: url('fonts/gibson/26DC34_7_0.eot?#iefix') format('embedded-opentype'), url('fonts/gibson/26DC34_7_0.woff') format('woff'), url('fonts/gibson/26DC34_7_0.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Gibson-Bold';
-  src: url('/stylesheets/fonts/gibson/26DC34_4_0.eot');
-  src: url('/stylesheets/fonts/gibson/26DC34_4_0.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/gibson/26DC34_4_0.woff') format('woff'), url('/stylesheets/fonts/gibson/26DC34_4_0.ttf') format('truetype');
+  font-family: 'Gibson';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fonts/gibson/26DC34_6_0.eot');
+  src: url('fonts/gibson/26DC34_6_0.eot?#iefix') format('embedded-opentype'), url('fonts/gibson/26DC34_6_0.woff') format('woff'), url('fonts/gibson/26DC34_6_0.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Gibson-Regular';
-  src: url('/stylesheets/fonts/gibson/26DC34_5_0.eot');
-  src: url('/stylesheets/fonts/gibson/26DC34_5_0.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/gibson/26DC34_5_0.woff') format('woff'), url('/stylesheets/fonts/gibson/26DC34_5_0.ttf') format('truetype');
+  font-family: 'Gibson';
+  font-weight: 600;
+  font-style: italic;
+  src: url('fonts/gibson/26DC34_3_0.eot');
+  src: url('fonts/gibson/26DC34_3_0.eot?#iefix') format('embedded-opentype'), url('fonts/gibson/26DC34_3_0.woff') format('woff'), url('fonts/gibson/26DC34_3_0.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Gibson-SemiBold';
-  src: url('/stylesheets/fonts/gibson/26DC34_6_0.eot');
-  src: url('/stylesheets/fonts/gibson/26DC34_6_0.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/gibson/26DC34_6_0.woff') format('woff'), url('/stylesheets/fonts/gibson/26DC34_6_0.ttf') format('truetype');
+  font-family: 'Gibson';
+  font-weight: bold;
+  font-style: normal;
+  src: url('fonts/gibson/26DC34_4_0.eot');
+  src: url('fonts/gibson/26DC34_4_0.eot?#iefix') format('embedded-opentype'), url('fonts/gibson/26DC34_4_0.woff') format('woff'), url('fonts/gibson/26DC34_4_0.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Gibson-Italic';
-  src: url('/stylesheets/fonts/gibson/26DC34_7_0.eot');
-  src: url('/stylesheets/fonts/gibson/26DC34_7_0.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/gibson/26DC34_7_0.woff') format('woff'), url('/stylesheets/fonts/gibson/26DC34_7_0.ttf') format('truetype');
+  font-family: 'Gibson';
+  font-weight: bold;
+  font-style: italic;
+  src: url('fonts/gibson/26DC34_2_0.eot');
+  src: url('fonts/gibson/26DC34_2_0.eot?#iefix') format('embedded-opentype'), url('fonts/gibson/26DC34_2_0.woff') format('woff'), url('fonts/gibson/26DC34_2_0.ttf') format('truetype');
 }
 /* BUILT WITH EEZE v0.6 - https://github.com/cousinwil/Eeze ----------------- */
