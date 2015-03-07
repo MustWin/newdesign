@@ -589,6 +589,9 @@ footer a:hover {
   -moz-background-size: cover;
   background-size: cover;
 }
+.page-bg.team-page {
+  background: #2d2d2d url('../images/team.jpg') center center no-repeat;
+}
 .page-bg-overlay {
   position: absolute;
   z-index: 0;
@@ -597,6 +600,9 @@ footer a:hover {
   width: 100%;
   height: 100%;
   background: rgba(3, 3, 3, 0.75);
+}
+.team-page .page-bg-overlay {
+  background: rgba(3, 3, 3, 0.55);
 }
 .nav-logo {
   position: absolute;
@@ -687,6 +693,20 @@ footer a:hover {
     width: 60%;
   }
 }
+.team-img {
+  border: 1px solid #dfdfdf;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 14px;
+  width: 70%;
+}
 .p-item-content {
   position: relative;
   display: inline-block;
@@ -710,6 +730,12 @@ footer a:hover {
   .p-item-content {
     width: 40%;
   }
+}
+.p-item-content.one-third {
+  width: 33%;
+  padding: 0 1.5%;
+  float: left;
+  margin-bottom: 20px;
 }
 .p-item-name {
   margin-top: -8px;
