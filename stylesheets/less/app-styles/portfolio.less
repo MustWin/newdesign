@@ -19,11 +19,14 @@
 .page-title {
   position: absolute;
   z-index: 2;
-  left: 40px;
+  left: 20px;
   bottom: 30px;
   font-size: 50px;
   font-weight: 300;
   color: @white;
+  @media(min-width: 480px){
+    left: 40px;
+  }
 }
 
 .page-title-bold {
@@ -46,9 +49,12 @@
 
 .p-item-wrap {
   display: block;
-  padding: 80px 40px;
+  padding: 40px 20px;
   background-color: @white;
   border-bottom: 1px solid @gray-d;
+  @media(min-width: 480px){
+    padding: 80px 40px;
+  }
 }
 
 .p-item {
@@ -63,8 +69,7 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-  float: left;
-  width: 60%;
+  width: 100%;
   margin-bottom: -1px;
   overflow: hidden;
   border: 1px solid @gray-d;
@@ -72,21 +77,36 @@
   .background-size(cover);
   .border-radius(4px);
   .box-shadow(0 3px 3px rgba(0,0,0,.05));
-  .p-item-wrap.p-left & {
-    float: right;
+  @media(min-width: 768px) {
+    float: left;
+    width: 50%;
+    .p-item-wrap.p-left & {
+      float: right;
+    }
+  }
+  @media(min-width: 900px) {
+    width: 60%;
   }
 }
 
 .p-item-content {
   position: relative;
   display: inline-block;
-  float: right;
-  width: 40%;
-  padding-left: 40px;
-  .p-item-wrap.p-left & {
-    float: left;
-    padding-left: 0;
-    padding-right: 40px;
+  width: 100%;
+  padding-top: 40px;
+  @media(min-width: 768px) {
+    float: right;
+    width: 50%;
+    padding-top: 0;
+    padding-left: 40px;
+    .p-item-wrap.p-left & {
+      float: left;
+      padding-left: 0;
+      padding-right: 40px;
+    }
+  }
+  @media(min-width: 900px) {
+    width: 40%;
   }
 }
 
