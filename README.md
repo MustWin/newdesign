@@ -84,6 +84,11 @@ You would use bootstrap.css in place of base.css in the base.html template if yo
   * From the Eeze directory in your terminal run: 
     * `lessc stylesheets/less/fonts.less > stylesheets/fonts.css`
 
+##Automate LESS Compiling
+```
+npm install
+grunt
+```
 
 ##Project Info:
 
