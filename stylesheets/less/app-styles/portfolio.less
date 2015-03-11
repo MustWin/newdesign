@@ -7,6 +7,9 @@
   &.team-page {
     background: @black url('../../images/team.jpg') center center no-repeat;    
   }
+  &.report-page {
+    background: @black url('../images/report.jpg') center center no-repeat;
+  }
 }
 
 .page-bg-overlay {
@@ -21,6 +24,10 @@
 
 .team-page .page-bg-overlay {
   background: rgba(3, 3, 3, 0.55);  
+}
+
+.report-page .page-bg-overlay {
+  background: rgba(3, 3, 3, 0.6);  
 }
 
 .nav-logo {
@@ -104,6 +111,141 @@
   }
 }
 
+.p-item-table {
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  @media(min-width: 900px) {
+    float: left;
+    width: 59%;
+  }
+
+  ol.thumb-grid {
+    list-style-type: none;
+  }
+
+  ol.thumb-grid li {
+    float: left;
+    width: 19%;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 3% 0 0;
+    margin: 0 0 6% 0;
+    font-size: 16px;
+    text-align: center;
+    min-height: 32px;
+
+    @media(min-width: 900px) {
+      margin-bottom: 10%;
+      max-height: 32px;
+    }
+
+    @media(min-width: 1200px) {
+      margin-bottom: 6%;
+    }
+
+    &.category {
+      text-align: left;
+      vertical-align: middle;
+      line-height: 32px;
+      max-height: 32px;
+      overflow: hidden;
+    }
+
+    &.grey {
+      background: #F7F7F7;
+    }
+
+    &.dark-grey {
+      background: #cecece;
+    }
+
+    &.half-dark-grey {
+      background: #cecece; /* Old browsers */
+      background: -moz-linear-gradient(left,  #cecece 0%, #cecece 50%, #f7f7f7 50%, #f7f7f7 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,#cecece), color-stop(50%,#cecece), color-stop(50%,#f7f7f7), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left,  #cecece 0%,#cecece 50%,#f7f7f7 50%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left,  #cecece 0%,#cecece 50%,#f7f7f7 50%,#f7f7f7 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(left,  #cecece 0%,#cecece 50%,#f7f7f7 50%,#f7f7f7 100%); /* IE10+ */
+      background: linear-gradient(to right,  #cecece 0%,#cecece 50%,#f7f7f7 50%,#f7f7f7 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-9 */
+    }
+
+    &.yellow {
+      background: #EFDD6A;
+    }
+
+    &.half-yellow {
+      background: #efdd6a; /* Old browsers */
+      background: -moz-linear-gradient(left,  #efdd6a 0%, #efdd6a 50%, #f7f7f7 50%, #f7f7f7 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,#efdd6a), color-stop(50%,#efdd6a), color-stop(50%,#f7f7f7), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left,  #efdd6a 0%,#efdd6a 50%,#f7f7f7 50%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left,  #efdd6a 0%,#efdd6a 50%,#f7f7f7 50%,#f7f7f7 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(left,  #efdd6a 0%,#efdd6a 50%,#f7f7f7 50%,#f7f7f7 100%); /* IE10+ */
+      background: linear-gradient(to right,  #efdd6a 0%,#efdd6a 50%,#f7f7f7 50%,#f7f7f7 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efdd6a', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-9 */
+    }
+
+    .center {
+      display: block;
+      width: 74px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .ss-trophy, .ss-medal {
+      display: block;
+      position: absolute;
+      z-index: 9999;
+      font-size: 40px;
+      margin-top: -16px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 64px;
+      height: 64px;
+      line-height: 76px;
+      background-color: #fff;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 0 1px 1px rgba(0,0,0,.03);
+    }
+
+    .ss-trophy {
+      color: #EFDD6A;
+      border-color: #EFDD6A;
+      text-shadow: 0 1px 0 #e6ca19;
+      border-color: lighten(#e6ca19,5%);
+    }
+
+    .ss-medal {
+      color: #cecece;
+      text-shadow: 0 1px 0 #b3b3b3;
+      border-color: lighten(#b3b3b3,5%);
+    }
+  }
+
+  .customer-quote {
+    .note-text.strong {
+      font-style: italic;
+      text-align: left;
+      padding: 0 6px;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #6d6d6d;
+    }
+  }
+
+  .thirds {
+    @media(max-width: 768px) {
+      width: 50%;
+    }
+  }
+}
+
 .team-img {
   border: 1px solid @gray-d;
   .border-radius(4px);
@@ -141,7 +283,7 @@
 
 .p-item-name {
   margin-top: -8px;
-  margin-bottom: 0;
+  margin-bottom: 12px;
   font-size: 32px;
   font-weight: 600;
   color: @gray-5;
@@ -233,4 +375,16 @@
   text-align: right;
   font-size: 12px;
   color: @gray-9;
+}
+
+.p-item-wrap { 
+  .report-page-content {
+    @media(min-width: 768px) {
+      width: 100%;
+    }
+
+    @media(min-width: 900px) {
+      width: 40%;
+    }
+  }
 }

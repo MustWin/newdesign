@@ -1,0 +1,343 @@
+/*!
+ * YourApp v0.0
+ * http://
+ * app.css
+ *
+ * Copyright 2014, Your Name
+ */
+/* app-styles/elements.less - My element styles
+  --------------------------------------------------------------------------- */
+/* app-styles/application.less - My Application's CSS!
+  --------------------------------------------------------------------------- */
+body {
+  font-family: 'Gibson';
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  background-color: #030303;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+.content {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+div,
+img {
+  box-sizing: border-box;
+}
+.cinema-bg {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: url('../images/city-bg.jpg');
+  /* Chrome10+,Safari5.1+ */
+  background-size: cover;
+  background-position: center top;
+  color: #fff;
+  height: 100%;
+  position: relative;
+}
+.logo-left {
+  text-align: center;
+  color: #efefef;
+  height: 600px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 24px;
+  top: 100px;
+  background-image: url('../images/logo-new.svgz');
+  background-size: 500px auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.nav {
+  font-size: 20px;
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  text-shadow: 2px 2px #030303;
+  text-align: right;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Gibson';
+  font-weight: normal;
+}
+.nav .nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 24px;
+}
+.nav .nav-item:hover {
+  color: #cecece;
+}
+.subtitle {
+  font-size: 18px;
+  position: absolute;
+  bottom: 24px;
+  right: 32px;
+  text-shadow: 2px 2px #030303;
+  text-align: right;
+  margin: 0;
+  font-family: 'Gibson';
+  font-weight: 600;
+  color: #fff;
+}
+.text-offset {
+  display: none;
+}
+.client-list {
+  background-color: #ffffff;
+  padding: 20px 0;
+  width: 100%;
+  margin: 0;
+  list-style-type: none;
+}
+.client {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10.5%;
+  padding: 0 2.9%;
+  text-align: center;
+}
+.client.cisco img {
+  width: 82%;
+}
+.clients {
+  font-size: 18px;
+  color: #5d5d5d;
+  font-family: 'Gibson';
+  font-weight: 500;
+}
+.section {
+  width: 94%;
+  padding: 48px 3%;
+  color: #ffffff;
+}
+.client-section {
+  background-color: #7d7d7d;
+}
+.client-section .type-one,
+.client-section .type-two,
+.client-section .type-three {
+  color: rgba(204, 204, 204, 0.6);
+}
+.strategic {
+  background-color: #343740;
+}
+.cost {
+  background-color: #ffffff;
+  color: #343740;
+}
+.scoreboard {
+  background-color: #3fc380;
+  padding-bottom: 0;
+  margin-bottom: -6px;
+}
+.testimonials {
+  background-color: #2772cd;
+}
+.testimonials .grande {
+  color: rgba(204, 204, 204, 0.72);
+  margin-bottom: 5px;
+}
+.testimonials .customer-quote {
+  height: 400px;
+}
+.testimonials .customer-quote .type-three {
+  display: block;
+  position: relative;
+  bottom: 0;
+  color: rgba(204, 204, 204, 0.72);
+}
+.testimonials .customer-quote .note-text.strong {
+  font-style: italic;
+  text-align: left;
+  padding: 0 6px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 280px;
+}
+.type-list {
+  margin: 40px 0 0;
+  text-align: center;
+  width: 60%;
+  list-style-type: none;
+  padding: 0;
+  float: left;
+}
+.type-item {
+  display: inline-block;
+  padding: 0 1.4%;
+  color: white;
+  text-align: center;
+  width: 30%;
+}
+.type {
+  font-size: 26px;
+  font-weight: 100;
+}
+.ss {
+  display: block;
+  line-height: 140px;
+  position: relative;
+  text-align: center;
+}
+.type-one {
+  font-size: 120px;
+}
+.type-two {
+  font-size: 72px;
+}
+.type-three {
+  font-size: 48px;
+}
+hr {
+  background-color: rgba(204, 204, 204, 0.6);
+  border: 0 none;
+  display: block;
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+hr:before,
+hr:after {
+  background-color: rgba(204, 204, 204, 0.6);
+  content: '';
+  display: block;
+  height: 11px;
+  position: absolute;
+  top: -5px;
+  width: 1px;
+}
+hr:after {
+  right: 0;
+}
+.section-heading {
+  font-size: 32px;
+  font-family: 'Gibson';
+  font-weight: 500;
+  margin: 0 0 24px;
+}
+.side-note {
+  width: 32%;
+  padding: 0;
+  margin: 0;
+}
+.side-note.bottom-drop {
+  margin-bottom: 48px;
+}
+.note-text {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 0;
+}
+.major {
+  width: 60%;
+}
+.section-link {
+  color: #f3f3f3;
+  font-weight: 500;
+  font-family: 'Gibson';
+  text-decoration: none;
+  border-bottom: 1px solid #f3f3f3;
+}
+.section-link:hover {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: none;
+}
+.award {
+  color: rgba(240, 223, 112, 0.9);
+  font-size: 186px;
+  margin: 0 auto -64px;
+  display: block;
+  width: 186px;
+  line-height: 260px;
+}
+.award.silver {
+  color: #cecece;
+}
+.award-text,
+.side-heading {
+  font-size: 26px;
+  font-weight: 100;
+}
+.thirds {
+  width: 29%;
+  padding: 2%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+.halves {
+  width: 45%;
+  padding: 2%;
+  display: inline-block;
+  text-align: center;
+}
+.gold-text {
+  color: rgba(240, 223, 112, 0.9);
+}
+.silver-text {
+  color: #343740;
+}
+.strong {
+  font-weight: 500;
+  font-family: 'Gibson';
+}
+.side-heading {
+  margin: 0 0 10px;
+}
+.attr {
+  font-size: 18px;
+  color: #cecece;
+}
+.grande {
+  font-size: 210px;
+  line-height: 210px;
+  width: 210px;
+  margin: 0 auto;
+  display: block;
+}
+.nps {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Gibson';
+  margin: -28px 0 10px;
+  text-align: center;
+}
+.hire-us {
+  background-color: #f3f3f3;
+  color: #343740;
+  min-height: 340px;
+}
+footer {
+  color: #ffffff;
+  font-size: 14px;
+  min-height: 200px;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Gibson';
+}
+footer a:hover {
+  color: #dfdfdf;
+}
+/* app-styles/media-queries.less - Responsive CSS for Mobile Devices
+  --------------------------------------------------------------------------- */
+/* BUILT WITH EEZE v0.6 - https://github.com/cousinwil/Eeze ----------------- */
