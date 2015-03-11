@@ -715,11 +715,11 @@ footer a:hover {
 }
 .p-item-table ol.thumb-grid li {
   float: left;
-  width: 19%;
+  width: 20%;
   display: block;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 3% 0 0;
+  padding: 0 2% 0 0;
   margin: 0 0 6% 0;
   font-size: 16px;
   text-align: center;
@@ -975,6 +975,14 @@ footer a:hover {
   .p-item-wrap .report-page-content {
     width: 40%;
   }
+}
+.minor {
+  font-size: 100px;
+  line-height: 140px;
+  width: 100px;
+  margin: 0 auto;
+  display: block; 
+  margin-top: -40px; 
 }
 /* app-styles/media-queries.less - Responsive CSS for Mobile Devices
   --------------------------------------------------------------------------- */
