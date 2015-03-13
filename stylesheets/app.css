@@ -1115,7 +1115,8 @@ footer a:hover {
   display: inline-block;
   border-radius: 4px;
 }
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:active {
   color: #fff;
 }
 /* app-styles/media-queries.less - Responsive CSS for Mobile Devices
