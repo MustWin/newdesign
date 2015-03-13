@@ -146,7 +146,7 @@
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  background-color: #d3443d;
+  background: #d3443d;
   color: #fff;
   -webkit-transition: background-color 200ms ease;
   -moz-transition: background-color 200ms ease;
@@ -158,5 +158,9 @@
 
   &:hover, &:active, &:visited {
     color: #fff;
+  }
+
+  &:hover {
+    background: darken(#d3443d, 10%);
   }
 }

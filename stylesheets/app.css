@@ -1105,7 +1105,7 @@ footer a:hover {
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  background-color: #d3443d;
+  background: #d3443d;
   color: #fff;
   -webkit-transition: background-color 200ms ease;
   -moz-transition: background-color 200ms ease;
@@ -1119,6 +1119,9 @@ footer a:hover {
 .contact-link:active,
 .contact-link:visited {
   color: #fff;
+}
+.contact-link:hover {
+  background: #b42f29;
 }
 /* app-styles/media-queries.less - Responsive CSS for Mobile Devices
   --------------------------------------------------------------------------- */
