@@ -1116,7 +1116,8 @@ footer a:hover {
   border-radius: 4px;
 }
 .contact-link:hover,
-.contact-link:active {
+.contact-link:active,
+.contact-link:visited {
   color: #fff;
 }
 /* app-styles/media-queries.less - Responsive CSS for Mobile Devices
